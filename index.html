@@ -1,13 +1,19 @@
-<html ng-app="exampleApp">
+<html >
 <head>
   <title>An Angular Example</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
   <script src="js/app.js"></script>
   <link rel="stylesheet" type="text/css" href="lib/uikit/css/uikit.almost-flat.min.css">
 </head>
-<body ng-controller="ExampleCtrl">
+<body >
+	<div ng-app="exampleApp" class="uk-container uk-container-center">
+		<div  class="uk-block uk-block-muted">
+			<div ng-controller="ExampleCtrl" class="uk-panel uk-panel-box">
+				<span class="uk-panel-title">Example #1</span>
+		  		<a type="button" class="uk-button" ng-class="{'uk-button-success':switchIsOn,'uk-button-danger':!switchIsOn}" ng-click="flipSwitch()">{{switchIsOn?'The Switch is ON!':'The Switch is OFF!'}}</a>
+			</div>
+		</div>
 
-  <a type="button" class="uk-button" ng-class="{'uk-button-success':switchIsOn,'uk-button-danger':!switchIsOn}" ng-click="flipSwitch()">{{switchIsOn?'The Switch is ON!':'The Switch is OFF!'}}</a>
-
+	</div>
 </body>
 </html>

@@ -1,0 +1,13 @@
+<html ng-app="exampleApp">
+<head>
+  <title>An Angular Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="lib/uikit/css/uikit.almost-flat.min.css">
+</head>
+<body ng-controller="ExampleCtrl">
+
+  <a type="button" class="uk-button" ng-class="{'uk-button-success':switchIsOn,'uk-button-danger':!switchIsOn}" ng-click="flipSwitch()">{{switchIsOn?'The Switch is ON!':'The Switch is OFF!'}}</a>
+
+</body>
+</html>
